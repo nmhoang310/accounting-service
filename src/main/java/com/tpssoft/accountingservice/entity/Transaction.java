@@ -1,6 +1,7 @@
 package com.tpssoft.accountingservice.entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,13 +29,11 @@ public class Transaction {
 	@Column
 	private String beneficiary;
 	@Column
-	private Boolean status;
+	private String status;
 	@Column
 	private String walletId;
 	@Column
 	private String cardId;
 	@Column
-	private String description;
-	@Column
-	private LocalDate transactionDate;
+	private LocalDateTime transactionDate;
 }
