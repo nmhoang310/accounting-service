@@ -1,6 +1,5 @@
 package com.tpssoft.accountingservice.entity;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
@@ -17,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Transaction {
 	@Id
 	private String transactionId;
-	
+
 	@Column
 	private Double amount;
 	@Column
@@ -25,9 +24,9 @@ public class Transaction {
 	@Column
 	private String category;
 	@Column
-	private String remitter;
-	@Column
 	private String beneficiary;
+	@Column
+	private String remitter;
 	@Column
 	private String status;
 	@Column

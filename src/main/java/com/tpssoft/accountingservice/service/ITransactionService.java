@@ -1,13 +1,16 @@
 package com.tpssoft.accountingservice.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 import com.tpssoft.accountingservice.dto.TransactionDto;
-import com.tpssoft.accountingservice.entity.Transaction;
 
 public interface ITransactionService {
 
 	boolean createTransaction(TransactionDto transaction);
+
+	List<TransactionDto> getTransactionByTransactionDate(LocalDateTime start, LocalDateTime end, String walletId);
+
+	List<TransactionDto> getTransactionByWalletId(String walletId);
 
 }

@@ -2,22 +2,24 @@ package com.tpssoft.accountingservice.dto;
 
 import java.time.LocalDateTime;
 
+import lombok.Builder;
 import lombok.Data;
 
+@Builder
 @Data
 public class TransactionDto {
-	
+
 	private String transactionId;
-	
+
 	private Double amount;
 
 	private Double fee;
 
 	private String category;
+	
+	private String beneficiary;
 
 	private String remitter;
-
-	private String beneficiary;
 
 	private String status;
 
